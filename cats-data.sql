@@ -1,4 +1,4 @@
--- psql -U postgres -d kittycats < cats-data.sql
+-- psql -U postgres -1f cats-data.sql kittycats
 
 INSERT INTO cats (name, breed, origin, birthday)
   VALUES ('Kitty', 'Burmese', 'TH', '2010-12-06');

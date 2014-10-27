@@ -1,4 +1,4 @@
--- psql -U postgres -d tapcats < traits-data.sql
+-- psql -U postgres -1f traits-data.sql kittycats
 
 INSERT INTO traits (kitty, noise, ability)
   VALUES (1, 'quiet', 'nothing special');

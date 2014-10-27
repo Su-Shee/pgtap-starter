@@ -1,4 +1,4 @@
--- psql -U postgres -d kittycats < cats-schema.sql
+-- psql -U postgres -1f cats-schema.sql kittycats
 
 CREATE TABLE cats (
   id SERIAL PRIMARY KEY,

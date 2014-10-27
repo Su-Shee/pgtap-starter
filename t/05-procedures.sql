@@ -2,13 +2,6 @@
 -- psql -U postgres -1f 05-procedures.sql kittycats
 
 BEGIN;
-SELECT plan(9);
-
-SELECT tables_are('public', ARRAY['cats', 'traits']);
-
-SELECT has_table('cats');
-SELECT has_pk('cats');
-BEGIN;
 SELECT plan(4);
 
 SELECT has_function('nicer_age');

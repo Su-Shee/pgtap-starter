@@ -1,3 +1,5 @@
+-- psql -U postgres -1f kitty-functions.sql kittycats
+
 CREATE ROLE catsitter LOGIN PASSWORD 'supersecure' VALID UNTIL '2014-11-01';
 
 CREATE FUNCTION updated_timestamp () RETURNS trigger AS $updated$

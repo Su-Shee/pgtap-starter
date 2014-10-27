@@ -1,4 +1,4 @@
--- psql -U postgres -d kittycats < traits-schema.sql
+-- psql -U postgres -1f traits-schema.sql kittycats
 
 CREATE TABLE traits (
   id SERIAL PRIMARY KEY,

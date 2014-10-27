@@ -2,14 +2,6 @@
 -- psql -U postgres -1f 03-columns.sql kittycats
 
 BEGIN;
-SELECT plan(9);
-
-SELECT tables_are('public', ARRAY['cats', 'traits']);
-
-SELECT has_table('cats');
-SELECT has_pk('cats');
-BEGIN;
-
 SELECT plan(30);
 
 SELECT columns_are('cats', ARRAY['id', 'name', 'breed', 'origin', 'birthday']);

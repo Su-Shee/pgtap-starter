@@ -1,6 +1,13 @@
 -- pg_prove -U postgres -d kittycats 03-columns.sql --verbose
--- psql -U postgres -d kittycats -Xf 03-columns.sql
+-- psql -U postgres -1f 03-columns.sql kittycats
 
+BEGIN;
+SELECT plan(9);
+
+SELECT tables_are('public', ARRAY['cats', 'traits']);
+
+SELECT has_table('cats');
+SELECT has_pk('cats');
 BEGIN;
 
 SELECT plan(30);

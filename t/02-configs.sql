@@ -1,5 +1,5 @@
 -- pg_prove -U postgres -d kittycats 02-configs.sql --verbose
--- psql -U postgres -d kittycats -Xf 02-configs.sql
+-- psql -U postgres -1f 02-configs.sql kittycats
 
 BEGIN;
 SELECT plan(2);
